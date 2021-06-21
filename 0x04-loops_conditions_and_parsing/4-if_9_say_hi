@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script prints "Holberton School" 10 times, and after the 9th iteration, prints Hi on a separate line.
+
+i=0
+while [ "$i" -lt 10 ]
+	do echo "Holberton School"
+	i=$((i+1))
+	if [[ "$i" == 9 ]]; then
+	echo "Hi"
+	fi
+done
