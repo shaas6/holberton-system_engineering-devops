@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script is invincible! It can't be killed with a certain command
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+	trap 'echo I am invincible!!!' SIGINT SIGTERM
+done
