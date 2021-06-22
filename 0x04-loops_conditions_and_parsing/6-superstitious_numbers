@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script prints numbers 1-20, and at certain numbers print x
+
+i=0
+while [ $i -lt 20 ]
+do
+	i=$((i+1))
+	echo "$i"
+	read -r  i
+	case $i in
+		4)
+			echo -n "bad luck from China"
+			;;
+		9)
+			echo -n "bad luck from Japan"
+			;;
+		17)
+			echo -n "bad luck from Italy"
+			;;
+	esac
+done
