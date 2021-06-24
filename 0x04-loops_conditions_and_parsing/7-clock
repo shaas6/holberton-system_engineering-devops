@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script prints a clock!
+
+i=0
+while [ $i -le 12 ]
+do
+	echo "Hour: $i"
+x=1
+while [ $x -le 59 ]
+do
+	echo "$x"
+	x=$((x+1))
+done
+	i=$((i+1))
+done
